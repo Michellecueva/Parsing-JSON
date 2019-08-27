@@ -19,6 +19,10 @@
 		28D14A392315B43B001E4619 /* DetailWeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A382315B43B001E4619 /* DetailWeatherViewController.swift */; };
 		28D14A3B2315B451001E4619 /* DetailColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A3A2315B451001E4619 /* DetailColorViewController.swift */; };
 		28D14A3D2315B479001E4619 /* DetailUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A3C2315B479001E4619 /* DetailUserViewController.swift */; };
+		28D14A422315BC44001E4619 /* ColorsScheme.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D14A412315BC44001E4619 /* ColorsScheme.json */; };
+		28D14A442315BF66001E4619 /* ColorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A432315BF66001E4619 /* ColorsModel.swift */; };
+		28D14A462315C451001E4619 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D14A452315C450001E4619 /* Weather.json */; };
+		28D14A482315C48F001E4619 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A472315C48F001E4619 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,10 @@
 		28D14A382315B43B001E4619 /* DetailWeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailWeatherViewController.swift; sourceTree = "<group>"; };
 		28D14A3A2315B451001E4619 /* DetailColorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailColorViewController.swift; sourceTree = "<group>"; };
 		28D14A3C2315B479001E4619 /* DetailUserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUserViewController.swift; sourceTree = "<group>"; };
+		28D14A412315BC44001E4619 /* ColorsScheme.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ColorsScheme.json; sourceTree = "<group>"; };
+		28D14A432315BF66001E4619 /* ColorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsModel.swift; sourceTree = "<group>"; };
+		28D14A452315C450001E4619 /* Weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Weather.json; sourceTree = "<group>"; };
+		28D14A472315C48F001E4619 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +117,10 @@
 			children = (
 				28D14A402315B50D001E4619 /* Supporting Files */,
 				28D14A082315ADF4001E4619 /* Main.storyboard */,
+				28D14A412315BC44001E4619 /* ColorsScheme.json */,
+				28D14A432315BF66001E4619 /* ColorsModel.swift */,
+				28D14A452315C450001E4619 /* Weather.json */,
+				28D14A472315C48F001E4619 /* WeatherModel.swift */,
 				28D14A3F2315B4BF001E4619 /* Main View Controllers */,
 				28D14A3E2315B4A7001E4619 /* Detail View Controllers */,
 				28D14A102315ADF6001E4619 /* Info.plist */,
@@ -268,9 +280,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28D14A422315BC44001E4619 /* ColorsScheme.json in Resources */,
 				28D14A0F2315ADF6001E4619 /* LaunchScreen.storyboard in Resources */,
 				28D14A0C2315ADF6001E4619 /* Assets.xcassets in Resources */,
 				28D14A0A2315ADF4001E4619 /* Main.storyboard in Resources */,
+				28D14A462315C451001E4619 /* Weather.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,9 +313,11 @@
 				28D14A3D2315B479001E4619 /* DetailUserViewController.swift in Sources */,
 				28D14A052315ADF4001E4619 /* AppDelegate.swift in Sources */,
 				28D14A372315B376001E4619 /* UsersViewController.swift in Sources */,
+				28D14A482315C48F001E4619 /* WeatherModel.swift in Sources */,
 				28D14A352315B358001E4619 /* ColorsViewController.swift in Sources */,
 				28D14A332315B2FA001E4619 /* WeatherViewController.swift in Sources */,
 				28D14A3B2315B451001E4619 /* DetailColorViewController.swift in Sources */,
+				28D14A442315BF66001E4619 /* ColorsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
