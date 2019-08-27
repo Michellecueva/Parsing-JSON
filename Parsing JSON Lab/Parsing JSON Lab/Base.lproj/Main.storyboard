@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Colors View Controller-->
         <scene sceneID="Rqc-VE-sQs">
             <objects>
-                <viewController id="SmB-3q-vn0" sceneMemberID="viewController">
+                <viewController id="SmB-3q-vn0" customClass="ColorsViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cn-4D-HRG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,12 +24,27 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1GZ-lQ-ZUN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="717.39130434782612" y="-24.107142857142858"/>
+            <point key="canvasLocation" x="717" y="46"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail Color View Controller-->
+        <scene sceneID="xFK-0C-WQA">
+            <objects>
+                <viewController id="13O-ef-j6k" customClass="DetailColorViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W6b-ij-oc2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iG4-nM-mKe"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Imu-JF-9fS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1826" y="46"/>
+        </scene>
+        <!--Weather View Controller-->
         <scene sceneID="Upn-lU-07S">
             <objects>
-                <viewController id="J6K-ot-P5X" sceneMemberID="viewController">
+                <viewController id="J6K-ot-P5X" customClass="WeatherViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Taa-1z-iXn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -41,6 +56,21 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GQy-ol-NAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="717.39130434782612" y="-673.66071428571422"/>
+        </scene>
+        <!--Detail Weather View Controller-->
+        <scene sceneID="9aR-Ko-Z3E">
+            <objects>
+                <viewController id="BFt-RL-aO7" customClass="DetailWeatherViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ox0-gZ-6yY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="zD9-kl-Mvs"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xxt-bV-o5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="-674"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="PJp-5N-cG0">
@@ -99,10 +129,10 @@
             </objects>
             <point key="canvasLocation" x="-192.75362318840581" y="-24.107142857142858"/>
         </scene>
-        <!--View Controller-->
+        <!--Users View Controller-->
         <scene sceneID="baI-pR-JIc">
             <objects>
-                <viewController id="ag3-il-Oe7" sceneMemberID="viewController">
+                <viewController id="ag3-il-Oe7" customClass="UsersViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="prE-4k-GXd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +143,22 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sIy-YN-mvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-272" y="640"/>
+            <point key="canvasLocation" x="735" y="744"/>
+        </scene>
+        <!--Detail Users View Controller-->
+        <scene sceneID="ROZ-yu-bW2">
+            <objects>
+                <viewController id="8gE-ki-I05" customClass="DetailUsersViewController" customModule="Parsing_JSON_Lab" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1DO-8I-Ajg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7Un-NB-S06"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cu9-do-9y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1825" y="744"/>
         </scene>
         <!--Users-->
         <scene sceneID="OmK-hx-LVy">
@@ -132,7 +177,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MOL-g6-pto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1025" y="447"/>
+            <point key="canvasLocation" x="-193" y="744"/>
         </scene>
     </scenes>
 </document>
