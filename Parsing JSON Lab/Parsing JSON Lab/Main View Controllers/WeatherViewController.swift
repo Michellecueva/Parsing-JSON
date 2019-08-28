@@ -67,4 +67,21 @@ extension WeatherViewController: UITableViewDataSource {
 
 extension WeatherViewController: UITableViewDelegate {
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let segueIdentifier = segue.identifier else {fatalError("No identifier in segue")}
+        
+        switch segueIdentifier {
+        case "weatherSegue":
+            guard let DetailVC = segue.destination as? DetailWeatherViewController else {fatalError("unexpected segueVC")}
+            guard let selectedIndexPath = weatherTableView.indexPathForSelectedRow else{fatalError("no row selected")}
+            
+            let currentCity = weather[selectedIndexPath.row]
+            
+            DetailVC.city = currentCity
+        default:
+            fatalError("unexpected segue identifies")
+        }
+        
+    }
+    
 }

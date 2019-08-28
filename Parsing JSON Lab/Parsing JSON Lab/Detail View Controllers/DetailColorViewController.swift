@@ -9,7 +9,13 @@
 import UIKit
 
 class DetailColorViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var hexLabel: UILabel!
+    
+    @IBOutlet weak var rgbLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

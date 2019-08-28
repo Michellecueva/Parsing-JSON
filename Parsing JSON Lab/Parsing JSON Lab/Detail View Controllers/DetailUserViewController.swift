@@ -9,7 +9,16 @@
 import UIKit
 
 class DetailUsersViewController: UIViewController {
-
+    
+    @IBOutlet weak var nameLabel: UILabel!
+    
+    @IBOutlet weak var phoneNumLabel: UILabel!
+    
+    @IBOutlet weak var dobLabel: UILabel!
+    
+    
+    @IBOutlet weak var addressField: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

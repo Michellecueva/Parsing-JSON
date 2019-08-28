@@ -110,6 +110,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iG4-nM-mKe"/>
                     </view>
+                    <connections>
+                        <outlet property="hexLabel" destination="Dix-Mj-uKz" id="Ujc-A4-RFY"/>
+                        <outlet property="nameLabel" destination="26g-2w-nyG" id="WiA-fm-aTO"/>
+                        <outlet property="rgbLabel" destination="IZ6-7l-vn7" id="FzT-11-J6A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Imu-JF-9fS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,15 +202,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0m-oK-DTn">
-                                <rect key="frame" x="181" y="203" width="185" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ou-NF-VBn">
+                                <rect key="frame" x="123" y="309" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ou-NF-VBn">
-                                <rect key="frame" x="135" y="309" width="185" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k0m-oK-DTn">
+                                <rect key="frame" x="167" y="203" width="185" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -215,6 +220,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="zD9-kl-Mvs"/>
                     </view>
+                    <connections>
+                        <outlet property="nameLabel" destination="wJ8-6B-S7i" id="hNG-N7-vaN"/>
+                        <outlet property="tempLabel" destination="k0m-oK-DTn" id="LjS-Km-jR8"/>
+                        <outlet property="weatherLabel" destination="6ou-NF-VBn" id="fAo-vT-l1y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xxt-bV-o5y" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -399,6 +409,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="7Un-NB-S06"/>
                     </view>
+                    <connections>
+                        <outlet property="addressField" destination="bsy-m7-zV7" id="eAL-AF-3P3"/>
+                        <outlet property="dobLabel" destination="5xN-qw-BQ5" id="22d-dj-Dny"/>
+                        <outlet property="nameLabel" destination="L4h-KJ-SZX" id="jeI-8b-3y2"/>
+                        <outlet property="phoneNumLabel" destination="pie-fT-UfJ" id="mP5-df-Jdj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cu9-do-9y8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
