@@ -121,12 +121,8 @@
 			children = (
 				28D14A402315B50D001E4619 /* Supporting Files */,
 				28D14A082315ADF4001E4619 /* Main.storyboard */,
-				28D14A412315BC44001E4619 /* ColorsScheme.json */,
-				28D14A432315BF66001E4619 /* ColorsModel.swift */,
-				28D14A452315C450001E4619 /* Weather.json */,
-				28D14A472315C48F001E4619 /* WeatherModel.swift */,
-				28D14A49231610E6001E4619 /* randomUsers.json */,
-				28D14A4B2316115E001E4619 /* UsersModel.swift */,
+				28D14A4D231629D2001E4619 /* Model Files */,
+				28D14A4E231629EA001E4619 /* JSON Files */,
 				28D14A3F2315B4BF001E4619 /* Main View Controllers */,
 				28D14A3E2315B4A7001E4619 /* Detail View Controllers */,
 				28D14A102315ADF6001E4619 /* Info.plist */,
@@ -180,6 +176,26 @@
 				28D14A0D2315ADF6001E4619 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		28D14A4D231629D2001E4619 /* Model Files */ = {
+			isa = PBXGroup;
+			children = (
+				28D14A432315BF66001E4619 /* ColorsModel.swift */,
+				28D14A472315C48F001E4619 /* WeatherModel.swift */,
+				28D14A4B2316115E001E4619 /* UsersModel.swift */,
+			);
+			path = "Model Files";
+			sourceTree = "<group>";
+		};
+		28D14A4E231629EA001E4619 /* JSON Files */ = {
+			isa = PBXGroup;
+			children = (
+				28D14A452315C450001E4619 /* Weather.json */,
+				28D14A49231610E6001E4619 /* randomUsers.json */,
+				28D14A412315BC44001E4619 /* ColorsScheme.json */,
+			);
+			path = "JSON Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
