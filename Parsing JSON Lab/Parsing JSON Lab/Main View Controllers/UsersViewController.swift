@@ -10,21 +10,62 @@ import UIKit
 
 class UsersViewController: UIViewController {
 
+    @IBOutlet weak var usersTableView: UITableView!
+    
+    var users = [ResultsWrapper]() {
+        didSet {
+            usersTableView.reloadData()
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableViewConfigurations()
+        loadData()
 
-        // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func tableViewConfigurations() {
+        usersTableView.dataSource = self
+        usersTableView.delegate = self
     }
-    */
+    
+    private func loadData() {
+        guard let pathToUsersFile = Bundle.main.path(forResource: "randomUsers", ofType: "json") else { fatalError("Couldn't find file")}
+        
+        let url = URL(fileURLWithPath: pathToUsersFile)
+        
+        do {
+            let data = try
+            Data(contentsOf: url)
+            
+            let usersFromJSON = try
+            ResultsWrapper.getResults(data: data)
+            
+            users = usersFromJSON
+        } catch {
+            fatalError("Couldn't get users from JSON \(error)")
+        }
+    }
 
+  
+}
+
+extension UsersViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return users.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
+        let currentUser = users[indexPath.row]
+        cell.textLabel?.text = currentUser.getFullName()
+        cell.detailTextLabel?.text = currentUser.email
+        return cell
+    }
+    
+    
+}
+
+extension UsersViewController: UITableViewDelegate{
+    
 }

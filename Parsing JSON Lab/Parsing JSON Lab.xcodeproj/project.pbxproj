@@ -23,6 +23,8 @@
 		28D14A442315BF66001E4619 /* ColorsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A432315BF66001E4619 /* ColorsModel.swift */; };
 		28D14A462315C451001E4619 /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D14A452315C450001E4619 /* Weather.json */; };
 		28D14A482315C48F001E4619 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A472315C48F001E4619 /* WeatherModel.swift */; };
+		28D14A4A231610E6001E4619 /* randomUsers.json in Resources */ = {isa = PBXBuildFile; fileRef = 28D14A49231610E6001E4619 /* randomUsers.json */; };
+		28D14A4C2316115E001E4619 /* UsersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D14A4B2316115E001E4619 /* UsersModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		28D14A432315BF66001E4619 /* ColorsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorsModel.swift; sourceTree = "<group>"; };
 		28D14A452315C450001E4619 /* Weather.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Weather.json; sourceTree = "<group>"; };
 		28D14A472315C48F001E4619 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		28D14A49231610E6001E4619 /* randomUsers.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = randomUsers.json; sourceTree = "<group>"; };
+		28D14A4B2316115E001E4619 /* UsersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 				28D14A432315BF66001E4619 /* ColorsModel.swift */,
 				28D14A452315C450001E4619 /* Weather.json */,
 				28D14A472315C48F001E4619 /* WeatherModel.swift */,
+				28D14A49231610E6001E4619 /* randomUsers.json */,
+				28D14A4B2316115E001E4619 /* UsersModel.swift */,
 				28D14A3F2315B4BF001E4619 /* Main View Controllers */,
 				28D14A3E2315B4A7001E4619 /* Detail View Controllers */,
 				28D14A102315ADF6001E4619 /* Info.plist */,
@@ -285,6 +291,7 @@
 				28D14A0C2315ADF6001E4619 /* Assets.xcassets in Resources */,
 				28D14A0A2315ADF4001E4619 /* Main.storyboard in Resources */,
 				28D14A462315C451001E4619 /* Weather.json in Resources */,
+				28D14A4A231610E6001E4619 /* randomUsers.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +324,7 @@
 				28D14A352315B358001E4619 /* ColorsViewController.swift in Sources */,
 				28D14A332315B2FA001E4619 /* WeatherViewController.swift in Sources */,
 				28D14A3B2315B451001E4619 /* DetailColorViewController.swift in Sources */,
+				28D14A4C2316115E001E4619 /* UsersModel.swift in Sources */,
 				28D14A442315BF66001E4619 /* ColorsModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
