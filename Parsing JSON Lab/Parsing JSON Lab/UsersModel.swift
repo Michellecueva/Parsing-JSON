@@ -48,6 +48,30 @@ struct LocationWrapper: Codable {
     let street: String
     let city: String
     let state: String
-//    let postcode: Data gives this as an Int sometimes and as a String other times 
+    let postcode: String?
+    
+    private enum CodingKeys: String, CodingKey {
+        case street = "street", city = "city", state = "state", postcode = "postcode"
+    }
+    
+    init(street: String, city: String, state: String, postcode: String? ) {
+        self.street = street
+        self.city = city
+        self.state = state
+        self.postcode = postcode
+    }
+    
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        street = try container.decode(String.self, forKey: .street)
+        city = try container.decode(String.self, forKey: .city)
+        state = try container.decode(String.self, forKey: .state)
+        
+        if let value = try? container.decode(Int.self, forKey: .postcode) {
+            postcode = String(value)
+        } else {
+            postcode = try container.decode(String.self, forKey: .postcode)
+        }
+    }
 }
 
