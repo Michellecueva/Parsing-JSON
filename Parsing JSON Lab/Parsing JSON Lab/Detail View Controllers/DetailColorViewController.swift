@@ -14,23 +14,24 @@ class DetailColorViewController: UIViewController {
     
     @IBOutlet weak var hexLabel: UILabel!
     
-    @IBOutlet weak var rgbLabel: UILabel!
+    @IBOutlet weak var rLabel: UILabel!
+    
+    @IBOutlet weak var gLabel: UILabel!
+    
+    @IBOutlet weak var bLabel: UILabel!
+    
+    var color: colorResults!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        nameLabel.text = color.name.value
+        hexLabel.text = color.hex.value
+        rLabel.text = color.rgb.fraction.r.description
+        gLabel.text = color.rgb.fraction.g.description
+        bLabel.text = color.rgb.fraction.b.description
 
-        // Do any additional setup after loading the view.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

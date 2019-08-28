@@ -50,7 +50,6 @@ class ColorsViewController: UIViewController {
         
     }
 
-
     
 }
 
@@ -66,6 +65,23 @@ extension ColorsViewController: UITableViewDataSource {
         cell.backgroundColor = UIColor(displayP3Red: CGFloat(currentColor.rgb.fraction.r), green: CGFloat(currentColor.rgb.fraction.g), blue: CGFloat(currentColor.rgb.fraction.b), alpha: 1)
         
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let segueIdentifier = segue.identifier else {fatalError("No identifier in segue")}
+        
+        switch segueIdentifier {
+        case "colorSegue":
+            guard let DetailVC = segue.destination as? DetailColorViewController else {fatalError("unexpected segueVC")}
+            guard let selectedIndexPath = colorsTableView.indexPathForSelectedRow else{fatalError("no row selected")}
+            
+            let currentColor = colors[selectedIndexPath.row]
+            
+            DetailVC.color = currentColor
+        default:
+            fatalError("unexpected segue identifies")
+        }
+        
     }
     
     

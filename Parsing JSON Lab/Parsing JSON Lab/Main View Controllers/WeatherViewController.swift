@@ -62,11 +62,6 @@ extension WeatherViewController: UITableViewDataSource {
         return cell
     }
     
-    
-}
-
-extension WeatherViewController: UITableViewDelegate {
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let segueIdentifier = segue.identifier else {fatalError("No identifier in segue")}
         
@@ -83,5 +78,10 @@ extension WeatherViewController: UITableViewDelegate {
         }
         
     }
+    
+    
+}
+
+extension WeatherViewController: UITableViewDelegate {
     
 }
