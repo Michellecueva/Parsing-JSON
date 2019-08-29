@@ -16,24 +16,18 @@ class DetailUsersViewController: UIViewController {
     
     @IBOutlet weak var dobLabel: UILabel!
     
-    
     @IBOutlet weak var addressField: UITextView!
+    
+    var user: ResultsWrapper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLabel.text = user.getFullName()
+        phoneNumLabel.text = user.phone
+        dobLabel.text = user.getDOB()
+        addressField.text = user.getFullAddress()
+        addressField.isEditable = false
 
-        // Do any additional setup after loading the view.
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

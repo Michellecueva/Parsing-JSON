@@ -13,11 +13,11 @@ struct UsersModel: Codable {
 }
 
 struct ResultsWrapper: Codable {
-    let name: NameWrapper
+    private let name: NameWrapper
     let email: String
     let phone: String
     let dob: DobWrapper
-    let location: LocationWrapper
+    private let location: LocationWrapper
     
     static func getResults(data: Data) throws -> [ResultsWrapper] {
         do {
@@ -32,6 +32,28 @@ struct ResultsWrapper: Codable {
     func getFullName() -> String {
         return "\(self.name.title). \(self.name.first) \(self.name.last)"
     }
+    
+    func getFullAddress() -> String {
+        return """
+                \(self.location.street)
+                \(self.location.city), \(self.location.state), \(self.location.postcode!)
+        """
+    }
+    
+    func getDOB() -> String {
+        
+        let dataString = self.dob.date
+        let formatter = DateFormatter()
+        formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
+        let date = formatter.date(from: dataString)
+        
+        if let date = date {
+            formatter.dateFormat = "MM-dd-yyyy"
+            return formatter.string(from: date)
+        }
+        return "Did not find date"
+    }
+    
 }
 
 struct NameWrapper: Codable {
